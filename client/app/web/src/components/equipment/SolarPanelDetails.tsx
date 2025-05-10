@@ -1,0 +1,1 @@
+SolarPanelDetails.tsx
