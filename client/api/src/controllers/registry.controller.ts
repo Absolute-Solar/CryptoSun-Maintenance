@@ -1,0 +1,1 @@
+registry.controller.ts
