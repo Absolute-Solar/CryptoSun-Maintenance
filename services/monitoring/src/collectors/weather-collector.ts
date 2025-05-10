@@ -1,0 +1,1 @@
+weather-collector.ts
