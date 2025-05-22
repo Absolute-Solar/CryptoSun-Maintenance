@@ -1,1 +1,0 @@
-InverterDetails.tsx

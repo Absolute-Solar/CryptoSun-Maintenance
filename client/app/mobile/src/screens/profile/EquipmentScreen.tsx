@@ -1,1 +1,0 @@
-EquipmentScreen.tsx

@@ -1,1 +1,0 @@
-BatteryDetails.tsx

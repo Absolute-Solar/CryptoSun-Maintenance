@@ -1,1 +1,0 @@
-ProvidersListScreen.tsx

@@ -1,1 +1,0 @@
-ProviderDetail.tsx

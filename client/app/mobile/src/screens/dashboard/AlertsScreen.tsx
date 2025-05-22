@@ -1,1 +1,0 @@
-AlertsScreen.tsx

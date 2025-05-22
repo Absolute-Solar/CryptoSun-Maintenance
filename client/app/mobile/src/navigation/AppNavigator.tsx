@@ -1,1 +1,0 @@
-AppNavigator.tsx
