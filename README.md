@@ -2,39 +2,22 @@
 
 Repository for maintenance tools, scripts, and procedures for the CryptoSun cryptocurrency ecosystem.
 
-![CryptoSun Maintenance Banner](./docs/images/maintenance-banner.png)
 
 ## Overview
 
 CryptoSun-Maintenance contains essential utilities, automation scripts, and documentation for maintaining the health, security, and performance of the CryptoSun blockchain network and its associated services. This repository serves as the central hub for all operational maintenance tasks performed by node operators, validators, and core developers.
 
-## Table of Contents
-
-- [Repository Purpose](#repository-purpose)
-- [Key Components](#key-components)
-- [Network Maintenance](#network-maintenance)
-- [Validator Operations](#validator-operations)
-- [Monitoring & Alerting](#monitoring--alerting)
-- [Backup & Recovery](#backup--recovery)
-- [Security Tools](#security-tools)
-- [Performance Optimization](#performance-optimization)
-- [Upgrade Procedures](#upgrade-procedures)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Repository Purpose
 
 This repository addresses the operational aspects of running the CryptoSun network, focusing on:
 
-- Automating routine maintenance tasks
-- Providing tools for node operators and validators
-- Offering diagnostic utilities for troubleshooting
-- Standardizing procedures for network upgrades
-- Ensuring data integrity and system security
-- Optimizing performance across the network
+1.) Automating routine maintenance tasks
+2.) Providing tools for node operators and validators
+3.) Offering diagnostic utilities for troubleshooting
+4.) Standardizing procedures for network upgrades
+5.) Ensuring data integrity and system security
+6.) Optimizing performance across the network
 
 ## Key Components
 
