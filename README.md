@@ -77,10 +77,10 @@ Automated upgrades:
 
 ## Prerequisites
 
-1.) Rust 1.65+
-2.) Solana CLI 1.14+
-3.) Docker
-4.) Ubuntu 20.04+
+1.) Rust 1.65+ <br>
+2.) Solana CLI 1.14+ <br>
+3.) Docker <br>
+4.) Ubuntu 20.04+ <br>
 
 ## Setup
 
