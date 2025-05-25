@@ -33,7 +33,7 @@ Automated monitoring:
       
 ## Backup & Recovery
 
-Automated data protection:
+Automated data protection: <br>
 1.) Ledger snapshots <br>
 2.) Validator backups <br>
 3.) Integrity checks
@@ -43,7 +43,7 @@ Automated data protection:
       ./scripts/backup/configure_snapshots.sh
 
 ## Security Tools
-Security automation:
+Security automation: <br>
 
 1.) RPC security config <br>
 2.) Key rotation <br>
