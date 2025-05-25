@@ -84,7 +84,7 @@ Automated upgrades:
 
 ## Setup
 
-      git clone https://github.com/cryptosun/cryptosun-maintenance.git
+      git clone https://github.com/Absolute-Solar/CryptoSun-Maintenance.git
       cd cryptosun-maintenance
       ./scripts/setup/install_dependencies.sh
       cargo build --release
