@@ -1,329 +1,107 @@
 # CryptoSun-Maintenance
 
-Repository for maintenance tools, scripts, and procedures for the CryptoSun cryptocurrency ecosystem.
+Tools and scripts for automating maintenance of the CryptoSun blockchain network.
 
+## Purpose
 
-## Overview
-
-CryptoSun-Maintenance contains essential utilities, automation scripts, and documentation for maintaining the health, security, and performance of the CryptoSun blockchain network and its associated services. This repository serves as the central hub for all operational maintenance tasks performed by node operators, validators, and core developers.
-
-
-## Repository Purpose
-
-This repository addresses the operational aspects of running the CryptoSun network, focusing on:
-
-1.) Automating routine maintenance tasks
-2.) Providing tools for node operators and validators
-3.) Offering diagnostic utilities for troubleshooting
-4.) Standardizing procedures for network upgrades
-5.) Ensuring data integrity and system security
-6.) Optimizing performance across the network
+Automates routine tasks, ensures network health, security, and performance for node operators and validators.
 
 ## Key Components
 
 ### Maintenance Scripts
+Rust and Bash scripts for automation:
+1.) Validator health checks <br>
+2.) Log rotation <br>
+3.) Database optimization <br>
+4.) Network sync verification 
 
-Collection of Rust and Bash scripts for automating common maintenance tasks:
-
-- Validator health checks
-- Log rotation and analysis
-- Database vacuuming and optimization
-- Account state validation
-- Network synchronization verification
-
-### Monitoring Tools
-
-Comprehensive monitoring solutions:
-
-- Prometheus exporters for CryptoSun metrics
-- Custom Grafana dashboards
-- Alert configuration templates
-- Performance benchmarking tools
-- Network health visualization
-
-### Backup & Recovery
-
-Data protection utilities:
-
-- Automated ledger snapshot scripts
-- Validator state backup tools
-- Disaster recovery procedures
-- Data integrity verification tools
-- Key management backup solutions
-
-### Security Tools
-
-Security management utilities:
-
-- RPC endpoint security configuration
-- Key rotation scripts and procedures
-- Vulnerability scanning tools
-- Network traffic analyzers
-- Firewall configuration templates
-
-### Documentation
-
-Extensive guides and reference materials:
-
-- Standard operating procedures
-- Troubleshooting guides
-- Best practices for validators
-- Network upgrade procedures
-- Security hardening checklists
-
-## Network Maintenance
-
-Regular maintenance is essential for the health of the CryptoSun network. This repository provides:
-
-### Node Maintenance
-
-```bash
-# Run a comprehensive health check on a node
+**Example:**
+bash
 ./scripts/node/health_check.sh
 
-# Optimize database performance
-./scripts/db/optimize.sh
+## Monitoring Tools
+Automated monitoring:
 
-# Analyze and rotate logs
-./scripts/logs/rotate_and_analyze.sh
-```
+1.) Prometheus metrics <br>
+2.) Grafana dashboards <br>
+3.) Alerts for issues 
 
-### Network-wide Tasks
+## Setup
 
-```bash
-# Check network synchronization status
-cargo run --bin network-sync-checker
-
-# Verify quorum across validators
-cargo run --bin quorum-verify
-
-# Generate network health report
-cargo run --bin health-report-generator
-```
-
-## Validator Operations
-
-Special tools for validator operators:
-
-### Validator Monitoring
-
-```bash
-# Monitor validator performance
-cargo run --bin validator-monitor -- --address <VALIDATOR_ADDRESS>
-
-# Check vote performance
-./scripts/validator/vote_performance.sh <VALIDATOR_ADDRESS>
-
-# Analyze commission competitiveness
-cargo run --bin commission-analyzer
-```
-
-### Stake Management
-
-```bash
-# Analyze stake distribution
-cargo run --bin stake-analyzer
-
-# Project returns based on current delegation
-./scripts/validator/return_projector.sh <VALIDATOR_ADDRESS>
-```
-
-## Monitoring & Alerting
-
-Comprehensive monitoring solutions for CryptoSun infrastructure:
-
-### Setup
-
-```bash
-# Install monitoring stack (Prometheus + Grafana)
-./scripts/monitoring/install_stack.sh
-
-# Configure CryptoSun metrics exporters
-./scripts/monitoring/configure_exporters.sh
-```
-
-### Dashboards
-
-The repository includes pre-configured Grafana dashboards:
-
-- Validator Performance Dashboard
-- Network Health Overview
-- Transaction Throughput Monitor
-- Resource Utilization Dashboard
-- Security Events Monitor
-
-### Alerts
-
-Customizable alert configurations for:
-
-- Node downtime
-- Performance degradation
-- Security events
-- Resource exhaustion
-- Consensus issues
-
+      ./scripts/monitoring/install_stack.sh
+      
 ## Backup & Recovery
 
-Data protection is critical for blockchain infrastructure:
+Automated data protection:
+1.) Ledger snapshots <br>
+2.) Validator backups <br>
+3.) Integrity checks
 
-### Scheduled Backups
+## Example:
 
-```bash
-# Set up automated ledger snapshots
-./scripts/backup/configure_snapshots.sh
-
-# Create validator state backup
-cargo run --bin validator-backup -- --output /backup/path
-```
-
-### Recovery Procedures
-
-```bash
-# Restore from snapshot
-./scripts/recovery/restore_from_snapshot.sh <SNAPSHOT_PATH>
-
-# Verify ledger integrity after recovery
-cargo run --bin ledger-verify
-```
+      ./scripts/backup/configure_snapshots.sh
 
 ## Security Tools
+Security automation:
 
-Tools to maintain the security of your CryptoSun infrastructure:
+1.) RPC security config <br>
+2.) Key rotation <br>
+3.) Vulnerability scans
 
-### Monitoring
+## Example:
 
-```bash
-# Scan for common security misconfigurations
-./scripts/security/configuration_scan.sh
-
-# Monitor for suspicious RPC activity
-cargo run --bin rpc-security-monitor
-```
-
-### Key Management
-
-```bash
-# Rotate operator keys
-./scripts/security/rotate_keys.sh
-
-# Set up hardware wallet integration
-./scripts/security/hww_setup.sh
-```
+      ./scripts/security/configuration_scan.sh
 
 ## Performance Optimization
+Performance tools:
 
-Tuning tools for optimizing CryptoSun performance:
+1.) Benchmarking <br>
+2.) OS tuning
 
-```bash
-# Benchmark node performance
-cargo run --bin node-benchmarker
+## Example:
 
-# Optimize OS settings for CryptoSun nodes
-./scripts/performance/tune_os.sh
-
-# Analyze transaction processing latency
-cargo run --bin tx-latency-analyzer
-```
+      cargo run --bin node-benchmarker
 
 ## Upgrade Procedures
+Automated upgrades:
 
-Standardized procedures for upgrading CryptoSun software:
+1.) Pre-upgrade checks <br>
+2.) Upgrade execution
 
-### Pre-upgrade Checklist
+## Example:
 
-```bash
-# Run pre-upgrade validation
-./scripts/upgrade/pre_upgrade_check.sh <TARGET_VERSION>
+      ./scripts/upgrade/perform_upgrade.sh <TARGET_VERSION>
 
-# Create pre-upgrade backup
-./scripts/upgrade/backup.sh
-```
+# Installation
 
-### Upgrade Execution
+## Prerequisites
 
-```bash
-# Perform upgrade
-./scripts/upgrade/perform_upgrade.sh <TARGET_VERSION>
+1.) Rust 1.65+
+2.) Solana CLI 1.14+
+3.) Docker
+4.) Ubuntu 20.04+
 
-# Verify upgrade success
-./scripts/upgrade/verify_upgrade.sh <TARGET_VERSION>
-```
+## Setup
 
-## Installation
-
-### Prerequisites
-
-- Rust 1.65+
-- Solana CLI 1.14+
-- Node.js 16+
-- Docker and Docker Compose (for monitoring stack)
-- Linux-based OS (Ubuntu 20.04+ recommended)
-
-### Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/cryptosun/cryptosun-maintenance.git
-cd cryptosun-maintenance
-
-# Install dependencies
-./scripts/setup/install_dependencies.sh
-
-# Build Rust tools
-cargo build --release
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your specific configuration
-```
-
+      git clone https://github.com/cryptosun/cryptosun-maintenance.git
+      cd cryptosun-maintenance
+      ./scripts/setup/install_dependencies.sh
+      cargo build --release
+      cp .env.example .env  # Edit .env
+      
 ## Usage
+Run daily maintenance:
 
-### Basic Maintenance Workflow
-
-1. Run regular health checks:
-   ```bash
-   ./scripts/daily_maintenance.sh
-   ```
-
-2. Monitor for alerts:
-   ```bash
-   cargo run --bin alert-monitor
-   ```
-
-3. Apply recommended optimizations:
-   ```bash
-   ./scripts/apply_optimizations.sh
-   ```
-
-4. Generate reports:
-   ```bash
-   cargo run --bin report-generator --output reports/
-   ```
+      ./scripts/daily_maintenance.sh
+      cargo run --bin alert-monitor
+      ./scripts/apply_optimizations.sh
 
 ## Contributing
+Fork, branch, commit, push, and submit a Pull Request refer to.
 
-We welcome contributions to improve the maintenance tools and procedures:
+License
+Apache 2.0 - see LICENSE.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-tool`)
-3. Commit your changes (`git commit -m 'Add some amazing tool'`)
-4. Push to the branch (`git push origin feature/amazing-tool`)
-5. Open a Pull Request
+This version focuses on automatic maintenance, removes redundant details, and ensure
 
-Please make sure to update documentation and add tests for new tools.
 
-## License
-
-This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-- Website: [cryptosun.io](https://cryptosun.io)
-- Email: [maintenance@cryptosun.io](mailto:maintenance@cryptosun.io)
-- Discord: [Join our community](https://discord.gg/cryptosun)
-- Telegram: [t.me/cryptosun](https://t.me/cryptosun)
-
----
-
-*This repository is part of the CryptoSun ecosystem. For more information on the broader project, please refer to the [main repository](https://github.com/cryptosun/cryptosun).*
