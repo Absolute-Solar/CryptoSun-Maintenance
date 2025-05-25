@@ -6,6 +6,9 @@ Tools and scripts for automating maintenance of the CryptoSun blockchain network
 
 Automates routine tasks, ensures network health, security, and performance for node operators and validators.
 
+<img src="https://yellow-negative-parrotfish-381.mypinata.cloud/ipfs/bafkreia7ytpnehu2cgbihileajtftzbgsiic74p2zfjmenghh6cgooce2u">
+
+
 ## Key Components
 
 ### Maintenance Scripts
