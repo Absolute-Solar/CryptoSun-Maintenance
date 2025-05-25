@@ -17,7 +17,8 @@ Rust and Bash scripts for automation: <br>
 
 **Example:**
 bash
-./scripts/node/health_check.sh
+
+      ./scripts/node/health_check.sh
 
 ## Monitoring Tools
 Automated monitoring:
