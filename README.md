@@ -9,7 +9,7 @@ Automates routine tasks, ensures network health, security, and performance for n
 ## Key Components
 
 ### Maintenance Scripts
-Rust and Bash scripts for automation:
+Rust and Bash scripts for automation: <br>
 1.) Validator health checks <br>
 2.) Log rotation <br>
 3.) Database optimization <br>
